@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* HEADER */
+.header{
+  background:#0a2a43;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
+
+.header h1{
+  font-size:36px;
+}
+
+.header p{
+  margin-top:10px;
+  font-size:16px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url("images/factory1.jpg") center/cover no-repeat;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:700px;
+  margin:auto;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+}
+
+/* GALLERY */
+.gallery{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.gallery h2{
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ABOUT */
+.about{
+  background:white;
+  padding:50px 20px;
+  text-align:center;
+}
+
+.about h2{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.about p{
+  max-width:800px;
+  margin:auto;
+  font-size:17px;
+}
+
+/* FOOTER */
+.footer{
+  background:#0a2a43;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .header h1{font-size:28px;}
+  .hero h2{font-size:24px;}
+}
